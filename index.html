@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilo/main.css">
+
+</head>
+<body>
+    <h1 class="text-center text-md-start" id="logo">BarberMaster</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon" id="ham"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-auto mx-md-3">
+                <a class="nav-link active" href="#">Início</a>
+            </li>
+            <li class="nav-item mx-auto mx-md-3">
+                <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item mx-auto mx-md-3">
+                <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item mx-auto mx-md-3">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container bi-align-top" id="perfil">
+        <p class="d-flex position-relative align-content-center text-center align-items-center mt-5 fs-5">Não transformo apenas o seu cabelo, transformo a sua autoestima e sua vida.</p>
+        <div class="Estilove">
+            <a href="#" class="VerEstilos text-uppercase">Ver Estilos</a>
+        </div>
+    </div>
+
+    <div class="container" id="descri">
+        <div>
+            <h2 class="">Bem-vindo!</h2>
+
+            <p>Meu nome é Rafael Oliveira, sou barbeiro e trabalho há 5 anos transformando cortes e barbas em verdadeiras expressões de estilo e personalidade. Acredito que um bom corte vai além da aparência: é sobre confiança, cuidado e bem-estar.</p>
+
+            <p>Minha especialidade é oferecer um atendimento personalizado, sempre atento aos detalhes que fazem toda a diferença. Seja para um corte clássico, um estilo moderno ou aquele ajuste perfeito na barba, meu objetivo é que você saia da barbearia se sentindo renovado e satisfeito.</p>
+
+            <p>Estou sempre me atualizando para trazer as melhores tendências e técnicas do mercado, mas sem abrir mão do conforto e da tradição. Aqui, o foco é você. Além disso, faço questão de criar um ambiente acolhedor, onde cada cliente possa relaxar e aproveitar o momento.</p>
+
+            <p>Espero te receber em breve e mostrar como um corte de cabelo ou uma barba bem feita pode transformar o seu dia!</p>
+        </div>
+    </div>
+
+    <hr style="height: 3px; background-color: yellow; border: none;">
+
+    <div class="container" id="estilos">
+        <h1>Estilos de cabelo</h1>
+        <div class="row d-flex justify-content-evenly align-items-center" id="botoes">
+            <button class="col-5 fs-2" id="bcach" onclick="cach()">CACHEADO</button>
+            <button class="col-5 fs-2" id="bliso" onclick="liso()">LISO</button>
+        </div>
+        <div class="container" id="aviso">
+            <i class="bi-arrow-up"></i>
+            <h2>ESCOLHA SEU TIPO DE CABELO</h2>
+        </div>
+        <div class="container" id="cacheado">
+            <h2>Corte em Camadas:</h2>
+            <p>Um corte clássico para cabelos cacheados, perfeito para realçar a definição natural dos cachos, valorizar o formato único de cada fio e adicionar leveza e movimento ao visual.</p>
+
+            <h2>Fluffy Edgar:</h2>
+            <p>Um corte moderno e cheio de atitude, que se tornou um sucesso no TikTok. Com laterais e nuca raspadas, o estilo combina perfeitamente com um topo volumoso no formato 'tigelinha', trazendo um visual ousado e descolado.</p>
+
+            <h2>Black Power:</h2>
+            <p>Um corte retrô atemporal, perfeito para quem deseja destacar a textura natural dos fios, com volume marcante e o clássico estilo afro que exala autenticidade e elegância.</p>
+        </div>
+
+        <div class="container" id="liso">
+            <h2>Undercut</h2>
+            <p>O Undercut é um dos cortes mais populares e modernos. Com as laterais e a parte de trás raspadas, deixando o topo mais longo, este corte oferece um contraste marcante. É ideal para quem gosta de ousar e está em busca de um visual arrojado.</p>
+
+            
+            
+            <h2>Pompadour</h2>
+            <p>O Pompadour é um clássico que nunca sai de moda. Com o topo volumoso e as laterais mais curtas, esse corte é perfeito para homens que querem um estilo elegante e sofisticado. Para manter o volume, é importante usar produtos de qualidade que garantam a fixação.</p>
+
+          
+            <h2>Corte Caesar</h2>
+            <p>O Caesar é um corte prático e cheio de estilo. Com franja curta e reta, é ideal para quem busca um visual limpo e fácil de manter. Esse corte é inspirado no imperador romano Júlio César, trazendo uma pegada histórica ao seu look.</p>
+        </div>
+    </div>
+
+    
+
+    <div class="container" id="agendamento">
+        <div class="agendar">
+            <button type="button" onclick="abrirPopup()" id="widt"><i class="bi-calendar2-check" id="calen"></i><i class="bi-calendar2-check-fill" id="calenmark"></i>Marcar um horário</button>
+        </div>
+        
+        
+    </div>
+
+
+
+
+
+
+    <a href="#" class="topo fixed-bottom">
+        <i class="bi-arrow-up"></i>
+    </a>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script/cabelo.js"></script>
+    <script src="script/popup"></script>
+</body>
+</html>

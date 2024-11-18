@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'starlogo' ;
+    src: url(../fonts/Fonstars.otf);
+}
+
+:root {
+    --cor1: #eedb0c;
+
+
+
+    --fontelogo: 'starlogo', serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+h1#logo {
+    font-family: var(--fontelogo);
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    z-index: 1000;
+    
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(238, 219, 12)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+
+
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.734);
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-link {
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: var(--cor1); 
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+#perfil {
+    background-image:linear-gradient() ;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.765), rgba(0, 0, 0, 0.34)), url(../img/pexels-thgusstavo.jpg);
+    
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    margin-top: -55px;
+    z-index: 0;
+    
+}
+
+.Estilove {
+    display: flex;
+    justify-content: center;
+}
+
+.VerEstilos {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: var(--cor1) solid 1px;
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.VerEstilos:hover {
+    padding: 15px;
+    box-shadow: 5px 5px 5px 2px black;
+    background-color: var(--cor1);
+    color: black;
+
+}
+
+#estilos {
+    margin-top: 20px;
+    
+}
+
+#estilos > h1 {
+    text-align: center;
+}
+
+#estilos  p {
+    text-indent: 2em;
+    font-size: 1.1em;
+}
+
+#descri p {
+    text-indent: 2em;
+}
+
+#aviso {
+    background-color: var(--cor1);
+    color: black;
+    text-align: center;
+    height: 40vh;
+    margin: 20px 0px;
+    border: black 2px solid;
+    border-radius: 20px;
+    
+}
+
+#aviso > i {
+    background-color: black;
+    padding: 10px;
+    color: var(--cor1);
+    border-radius: 50%;
+    position: relative;
+    top: 35%;
+}
+
+#aviso > h2 {
+    position: relative;
+    top: 40%;
+}
+
+#cacheado {
+    background-color: white;
+    color: black;
+    margin: 20px 0px;
+    padding: 10px;
+    border: var(--cor1) 2px solid;
+    border-radius: 20px;
+    display: none;
+    transition: background-color 0.8s ease; 
+}
+
+#cacheado > h2 {
+    font-size: 2em;
+    padding: 10px 0px;
+}
+
+#liso {
+    background-color: white;
+    color: black;
+    margin: 20px 0px;
+    padding: 10px;
+    border: var(--cor1) 2px solid;
+    border-radius: 20px;
+    display: none;
+    transition: background-color 0.8s ease; 
+}
+
+#liso > h2 {
+    font-size: 2em;
+    padding: 10px 0px;
+}
+
+
+
+
+#botoes button {
+    background-color: black;
+    color: aliceblue;
+    outline: 0;
+    border: 1px solid var(--cor1);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+
+    
+}
+
+#botoes button:hover {
+    padding: 5px;
+    transition: 800ms;
+    border-radius: 20px 10px 20px 10px;
+}
+
+#agendamento {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.agendar {
+    width: 100%;
+    text-align: center;
+}
+
+.agendar > button {
+    background-color: var(--cor1);
+    border: none;
+    padding: 10px;
+    font-size: 2em;
+    border-radius: 20px;
+    transition: width 800ms ease;
+    
+}
+
+.agendar  i {
+    margin-right:10px;
+}
+
+#calenmark {
+    display: none;
+}
+
+.agendar > button:hover {
+    width: 400px;
+    
+}
+
+.agendar > button:hover #calenmark {
+    display: inline;
+}
+
+.agendar > button:hover #calen {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.topo {
+    
+    text-align: right;
+    
+    
+    
+}
+
+.topo > i {
+    border-radius: 60%;
+    background-color: rgba(0, 0, 0, 0.464);
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    top: -10px;
+    font-size: 2em;
+}
+
+.topo > i:hover {
+    background-color: var(--cor1);
+    color: black;
+    font-size: 3em;
+    transition: 800ms;
+}
