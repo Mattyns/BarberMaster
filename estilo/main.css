@@ -204,6 +204,11 @@ h1#logo {
 #agendamento {
     margin-top: 150px;
     margin-bottom: 150px;
+    transition: height 0.5s ease;
+    border-radius: 20px;
+    width: 92%;
+    padding: 10px;
+    height: 80px;
 }
 
 .agendar {
@@ -211,13 +216,16 @@ h1#logo {
     text-align: center;
 }
 
-.agendar > button {
+.agendar > div {
     background-color: var(--cor1);
+    color: black;
     border: none;
-    padding: 10px;
-    font-size: 2em;
+    padding: 5px;
+    font-size: 1.5em;
     border-radius: 20px;
     transition: width 800ms ease;
+    width: 80%;
+    margin: auto;
     
 }
 
@@ -229,17 +237,29 @@ h1#logo {
     display: none;
 }
 
-.agendar > button:hover {
-    width: 400px;
+.agendar > div:hover {
+    width: 100%;
     
 }
 
-.agendar > button:hover #calenmark {
+.agendar > div:hover #calenmark {
     display: inline;
 }
 
-.agendar > button:hover #calen {
+.agendar > div:hover #calen {
     display: none;
+}
+
+.tabagendar {
+    width: 99%;
+    height: 10px;
+    margin: auto;
+    align-content: center;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    border: 2px solid black;
+    display: none;
+    transition: height 5s ease;
 }
 
 
