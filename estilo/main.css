@@ -202,9 +202,9 @@ h1#logo {
 }
 
 #agendamento {
-    margin-top: 150px;
-    margin-bottom: 150px;
-    transition: height 0.5s ease;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    transition: height 0.8s ease;
     border-radius: 20px;
     width: 92%;
     padding: 10px;
@@ -223,7 +223,7 @@ h1#logo {
     padding: 5px;
     font-size: 1.5em;
     border-radius: 20px;
-    transition: width 800ms ease;
+    transition: width 1s ease;
     width: 80%;
     margin: auto;
     
@@ -251,15 +251,16 @@ h1#logo {
 }
 
 .tabagendar {
-    width: 99%;
-    height: 10px;
-    margin: auto;
+    display: flex;
     align-content: center;
-    background-color: white;
+    width: 99%;
+    height: 1px;
+    margin: auto;
+    background-color:white;
     border-radius: 0px 0px 20px 20px;
     border: 2px solid black;
-    display: none;
-    transition: height 5s ease;
+    opacity: 0;
+    transition:height 1s ease;
 }
 
 
@@ -270,29 +271,57 @@ h1#logo {
 
 
 
-.topo {
+.redes {
+    background-color: #eedb0c;
+    width: 15px;
+    height: 250px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px 0px 0px 20px;
+    margin: 10px 0px;
+    margin-left: auto;
+    transition: width 0.8s ease;
     
-    text-align: right;
     
     
     
 }
 
-.topo > i {
-    border-radius: 60%;
-    background-color: rgba(0, 0, 0, 0.464);
-    color: var(--cor1);
-    border: 1px solid var(--cor1);
-    padding: 5px;
-    margin: 10px;
-    position: relative;
-    top: -10px;
-    font-size: 2em;
+.redes:hover {
+    width: 70px;
+    transition: width 0.8s ease;
+    
 }
 
-.topo > i:hover {
-    background-color: var(--cor1);
+.redes > i {
+   display: none;
+   font-size: 3em;
+}
+
+.redes:hover > i {
+    display: block;
+}
+
+.whats {
+    color: rgb(11, 184, 11);
+}
+
+.face {
+    color: rgb(57, 57, 251);
+}
+
+.insta {
+    color: crimson;
+}
+
+.whats:hover {
+    color:black ;
+}
+
+.face:hover {
+    color:black ;
+}
+
+.insta:hover {
     color: black;
-    font-size: 3em;
-    transition: 800ms;
 }
