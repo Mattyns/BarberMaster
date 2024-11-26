@@ -562,7 +562,7 @@ footer > a {
     }
 
     #perfil > p {
-        width: 80%;
+        width: fit-content;
         margin: auto;
         position: relative;
         top: 140px;
@@ -571,6 +571,7 @@ footer > a {
     .Estilove {
         position: relative;
         top: 150px;
+       
     }
 
     #descri  p {
